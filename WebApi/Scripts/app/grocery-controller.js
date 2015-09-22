@@ -1,3 +1,8 @@
-﻿angular.module("GroceryApp", [])
-    .controller("GroceryController", function ($scope, $http) {
-});
+﻿angular.module("groceryApp", [])
+    .controller("groceryController", [function ($scope, $http) {
+        var self = this;
+
+        self.Listar = function () {
+            alert('chamou');
+        }
+    }]);

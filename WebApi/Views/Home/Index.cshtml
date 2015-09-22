@@ -1,7 +1,9 @@
-﻿<div ng-controller="GroceryController">
-
+﻿<div ng-controller="groceryController as ctrl">
+    <button id="btnListar" ng-click="ctrl.Listar()">Listar produtos</button>
+    <ul>
+        <li></li>
+    </ul>
 </div>
 
-@section scripts{
-    @Scripts.Render("~/bundles/angular")
-}
+
+

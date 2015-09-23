@@ -1,10 +1,10 @@
 ﻿app.factory('GroceryService', ['$http', function ($http) {
     var urlBase = '/api';
-    var CityService = {};
+    var GroceryService = {};
 
-    CityService.GetProducts = function () {
+    GroceryService.GetProducts = function () {
         return $http.get(urlBase + '/GroceryShop');
     };
 
-    return CityService;
+    return GroceryService;
 }]);

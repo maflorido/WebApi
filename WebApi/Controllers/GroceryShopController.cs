@@ -17,6 +17,7 @@ namespace WebApi.Controllers
             new ProdutoModel(1, "Produto 3", 10)
         } ;
 
+        [HttpGet]
         public IEnumerable<ProdutoModel> GetAll()
         {
             return produtos;

@@ -17,6 +17,7 @@ namespace Grocery.WebApp.Controllers
             new Produto(3,"prod 3", 5)
         };
 
+        [HttpGet]
         public IList<Produto> GetAll()
         {
             return Produtos;

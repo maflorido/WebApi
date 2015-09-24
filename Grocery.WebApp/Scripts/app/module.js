@@ -5,9 +5,9 @@ app.factory("ShareData", function () {
 });
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
-    $routeProvider.when('/ListarProdutos',
+    $routeProvider.when('/',
                         {
-                            templateUrl: 'Views/Home/_ListarProdutos.cshtml',
+                            templateUrl: 'ListaProdutos.html',
                             controller: 'groceryController'
                         });
 
